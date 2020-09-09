@@ -140,10 +140,10 @@ int main(int argc, char** argv){
   //chartemp = getenv("RAYLENGTH");
   raylength = 2*numx;//atof(chartemp);
 
-  //chartemp = getenv("SPATINDEXING");
-  spatindexing = 5;//atoi(chartemp);
-  //chartemp = getenv("SPECINDEXING");
-  specindexing = 5;//atoi(chartemp);
+  chartemp = getenv("SPATINDEXING");
+  spatindexing = atoi(chartemp);//5;
+  chartemp = getenv("SPECINDEXING");
+  specindexing = atoi(chartemp);//5;
 
   chartemp = getenv("NUMITER");
   numiter = atoi(chartemp);

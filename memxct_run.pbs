@@ -1,0 +1,11 @@
+#PBS -N memxct-cpu
+#PBS -l select=1:ncpus=32:mpiprocs=36:mem=250gb,walltime=03:00:00
+#PBS -q fthpc
+
+module add openmpi/4.0.3-gcc
+
+cd /home/gdube/scc/MemXCT-CPU
+make clean
+make
+
+./run.sh.palmetto

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#qsub -I -l select=1:ncpus=32:mpiprocs=36:mem=100gb,walltime=3:00:00 -q fthpc
+qsub memxct_run.pbs
