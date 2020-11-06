@@ -1,10 +1,10 @@
 # ----- Make Macros -----
 
 CXX = mpicxx
-CXXFLAGS = -std=c++11 -fopenmp# -mavx512f -mavx512vl -march=native
+CXXFLAGS = -std=c++11 -fopenmp -mavx512f -mavx512vl -march=native
 OPTFLAGS = -O3 -xhost 
 
-LD_FLAGS = -fopenmp #-mavx512f -mavx512vl -march=native
+LD_FLAGS = -fopenmp -mavx512f -mavx512vl -march=native
 
 TARGETS = memxct
 OBJECTS = src/main.o src/raytrace.o src/kernels.o
