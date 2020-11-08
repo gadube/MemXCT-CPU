@@ -1,0 +1,11 @@
+#PBS -N azure-test
+#PBS -l select=2:ncpus:16:mpiprocs=16:mem=100gb,walltime=03:00:00
+#PBS -j oe
+
+module add mpi/hpcx
+
+cd $HOME/MemXCT
+make clean
+make
+
+./run.sh.azure
