@@ -8,4 +8,4 @@ cd $HOME/MemXCT
 make clean
 make
 
-./run.sh.azure
+source ./run.sh.azure
