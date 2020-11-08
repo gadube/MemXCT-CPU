@@ -8,4 +8,7 @@ cd $HOME/MemXCT
 make clean
 make
 
+uniq $PBS_NODEFILE > hostfile
+sed -n 's/$/slots=16/' hostfile > hostfile
+
 source ./run.sh.azure
